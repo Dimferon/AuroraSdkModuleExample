@@ -1,4 +1,4 @@
-# AuroraModuleExample - пример проекта, в котором подключается qml плагин ( [текстовый плагин](https://github.com/Dimferon/test_cppmodule/))
+# AuroraModuleExample - пример проекта, в котором подключается qml плагин ([текстовый плагин](https://github.com/Dimferon/test_cppmodule/))
 
 ## Используемая документация:
 - [Module Definition qmldir Files](https://doc.qt.io/qt-5/qtqml-modules-qmldir.html)
