@@ -1,7 +1,7 @@
 import QtQuick 2.5
 import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
-import test_module.chart 0.1
+import test_module.test_cppmodule 0.1
 
 Page{
     id: examplePage
@@ -44,22 +44,24 @@ Page{
                 }
             ]
 
-            function loadValue(){
-                if(woCommonInfo.countAll > 0){
-                    laborCostsDiag.clearValue();
-                    var list = woCommonInfo.workingHoursOfTypes;
-                    for(var type in list){
-                        var listValue = [Number(list[type]["sum_plan"]), Number(list[type]["sum_labor"])];
-                        laborCostsDiag.addValue(list[type]["text"],
-                                                listValue
-                                                );
-                    }
-                    laborCostsDiag.update();
+            function loadValue(){                
+                lineDiag.clearValue();
+                var list = [
+                            {"v1":10,"v2":20, "t":"t1"},
+                            {"v1":20, "v2":30, "t":"t2"},
+                        ];
+
+                for(var ind in list){
+                    var listValue = [Number(list[ind]["v1"]), Number(list[ind]["v2"])];
+                    lineDiag.addValue(list[ind]["t"],
+                                            listValue
+                                            );
                 }
+                lineDiag.update();
             }
 
             Component.onCompleted: {
-                laborCostsDiag.loadValue();
+                lineDiag.loadValue();
             }
         }
     }

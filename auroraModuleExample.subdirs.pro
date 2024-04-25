@@ -3,7 +3,7 @@ CONFIG += ordered
 
 SUBDIRS = \
     qml_plugin \
-    auroraModuleExample
+    AuroraModuleExample
 
 OTHER_FILES += \
     rpm/AuroraModuleExample.spec
