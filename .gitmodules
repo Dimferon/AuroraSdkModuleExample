@@ -1,0 +1,3 @@
+[submodule "qml_plugin/test_cppmodule"]
+	path = qml_plugin/test_cppmodule
+	url = https://github.com/Dimferon/test_cppmodule

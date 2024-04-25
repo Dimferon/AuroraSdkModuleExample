@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=example
+Exec=/usr/bin/AuroraModuleExample
+Name=AuroraModuleExample
+
+[X-Sailjail]
+Permissions=Camera;Location;Internet;UserDirs;PublicDir;RemovableMedia;Secrets
+OrganizationName=ru.AuroraModuleExample
+ApplicationName=AuroraModuleExample
